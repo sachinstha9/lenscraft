@@ -1,0 +1,52 @@
+:root {
+  --primary-font: "Flamenco", system-ui;
+  --secondary-font: "Faustina", system-ui;
+  --bg-color: #fffcf6;
+  --primary-color: #8d7235;
+  --secondary-color: #828282;
+  --max-content-width: 1280px;
+  --content-heading-size: 32px;
+  --content-secondary-text-size: 20px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+/* content */
+.content {
+  max-width: 1280px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin: 50px auto 0;
+}
+
+.content-item {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  height: fit-content;
+}
+
+.content-heading {
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  font-size: var(--content-heading-size);
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.content-item-body {
+  width: 100%;
+}

@@ -1,0 +1,40 @@
+.blog .content-item-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.blog .content-item-body section {
+  width: 100%;
+}
+
+.blog .content-item-body section img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 5px;
+}
+
+.blog .content-item-body section div {
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.blog .content-item-body section div p:nth-child(1) {
+  font-size: 20px;
+}
+
+.blog .content-item-body section div p:nth-child(2) {
+  font-size: 16px;
+}
+
+.blog .content-item-body section div p:nth-child(3) {
+  font-size: 15px;
+  color: var(--secondary-color);
+  font-style: italic;
+  margin-top: 5px;
+}
