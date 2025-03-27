@@ -1,0 +1,21 @@
+.customer .content-item-body section {
+  display: grid;
+  align-items: center;
+}
+
+.customer .content-item-body section:nth-child(1) {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.customer .content-item-body section:nth-child(2) {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.customer .content-item-body section img {
+  justify-self: center;
+  width: 100%;
+}
+
+.customer .content-item-body section:nth-child(2) img {
+  width: 60%;
+}

@@ -1,0 +1,26 @@
+.quote_banner {
+  background-image: url("../../assets/components/quote_banner.png");
+  background-size: 100% 100%;
+  width: 100%;
+  aspect-ratio: 5/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin: 50px 0;
+}
+
+.quote_banner p {
+  text-align: center;
+  font-family: "Fjalla One", sans-serif;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.quote_banner p:nth-child(1) {
+  font-size: 2vw;
+}
+
+.quote_banner p:nth-child(2) {
+  font-size: 1vw;
+}

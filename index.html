@@ -5,15 +5,21 @@
     <meta name="viewport" content="width= , initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/css/global.css" />
+
+    <link rel="stylesheet" href="/css/home.css" />
+
     <link rel="stylesheet" href="/css/components/header.css" />
     <link rel="stylesheet" href="/css/components/through_my_lens.css" />
     <link rel="stylesheet" href="/css/components/blogs_component.css" />
-    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/components/quote_banner.css" />
+    <link rel="stylesheet" href="/css/components/our_customer.css" />
+    <link rel="stylesheet" href="/css/components/appointment.css" />
+    <link rel="stylesheet" href="/css/components/footer.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Flamenco:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Fjalla+One&family=Flamenco:wght@300;400&display=swap"
       rel="stylesheet"
     />
 
@@ -184,6 +190,166 @@
           </section>
         </div>
       </div>
+    </div>
+
+    <div class="quote_banner">
+      <p>"When I have a camera in my hand, I know no fear."</p>
+      <p>- Alfred Eisenstaedt</p>
+    </div>
+
+    <div class="content">
+      <div class="customer content-item">
+        <p class="content-heading">OUR CUSTOMERS</p>
+
+        <div class="content-item-body">
+          <section>
+            <img
+              src="./assets/components/customers/hawai_tourism.png"
+              alt="hawai tourism"
+            />
+            <img
+              src="./assets/components/customers/peak_design.png"
+              alt="peak design"
+            />
+            <img
+              src="./assets/components/customers/kathmandu.png"
+              alt="kathmandu"
+            />
+          </section>
+
+          <section>
+            <img src="./assets/components/customers/nikon.png" alt="nikon" />
+            <img
+              src="./assets/components/customers/ecostore.png"
+              alt="eco store"
+            />
+          </section>
+        </div>
+      </div>
+
+      <div class="appointment content-item">
+        <p class="content-heading">GET APPOINTMENT</p>
+
+        <div class="content-item-body">
+          <section>
+            <form>
+              <div style="display: flex; gap: 30px">
+                <div class="appointment-input">
+                  <label for="fname">First Name*</label>
+                  <input type="text" name="fname" />
+                </div>
+
+                <div class="appointment-input">
+                  <label for="lname">Last Name*</label>
+                  <input type="text" name="lname" />
+                </div>
+              </div>
+
+              <div class="appointment-input">
+                <label for="email">Email*</label>
+                <input type="email" name="email" />
+              </div>
+
+              <div class="appointment-input">
+                <label for="number">Phone Number</label>
+                <input type="text" name="number" />
+              </div>
+
+              <div class="appointment-input">
+                <label>What services are you intrested in?*</label>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    id="photography"
+                    name="photography"
+                    value="Bike"
+                  />
+                  <label for="photography"> Photography</label><br />
+
+                  <input
+                    type="checkbox"
+                    id="videography"
+                    name="videography"
+                    value="Car"
+                  />
+                  <label for="videography"> Videography</label><br />
+
+                  <input
+                    type="checkbox"
+                    id="content_creation"
+                    name="content_creation"
+                    value="Boat"
+                  />
+                  <label for="content_creation"> Content Creation</label><br />
+                </div>
+              </div>
+
+              <div class="appointment-input">
+                <label for="anything_else">Anything else?*</label>
+
+                <textarea
+                  name="anything_else"
+                  id="anything_else"
+                  style="resize: none"
+                  rows="10"
+                ></textarea>
+              </div>
+
+              <div>
+                <button class="appointment-btn">SUBMIT</button>
+              </div>
+            </form>
+          </section>
+
+          <section>
+            <img
+              src="./assets/components/appointment.png"
+              alt="picture of (i donot know in english the word)"
+            />
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+
+      <section class="footer-location">
+        <p>
+          We're based in
+          <span style="text-decoration: underline">Cuba Street, Wellington</span
+          >.
+        </p>
+
+        <p>We work with client all over the globe. Get in touch with us!</p>
+      </section>
+
+      <section class="footer-contact-details">
+        <p>
+          <i class="fa fa-envelope" aria-hidden="true"></i> info@lenscraft.co.nz
+        </p>
+
+        <p><i class="fa fa-phone" aria-hidden="true"></i> +62-1234567890</p>
+      </section>
+
+      <p style="font-size: 14px">© Copyright. Made by Sachin</p>
     </div>
   </body>
 </html>

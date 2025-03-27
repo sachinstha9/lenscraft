@@ -1,0 +1,70 @@
+.appointment .content-item-body {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.appointment .content-item-body section:nth-child(1) {
+  flex: 3;
+  padding: 0 80px 0 0;
+}
+
+.appointment .content-item-body section:nth-child(2) {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.appointment .content-item-body section:nth-child(2) img {
+  width: 100%;
+}
+
+.appointment .content-item-body section:nth-child(1) form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.appointment-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  flex: 1;
+}
+
+.appointment-input label,
+.appointment-input input,
+.appointment-input textarea {
+  align-items: start;
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.appointment-input input,
+.appointment-input textarea {
+  border: 1px solid var(--secondary-color);
+  outline: none;
+  padding: 10px;
+}
+
+.appointment-btn {
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  padding: 10px 15px;
+  letter-spacing: 2px;
+  transition: 100ms;
+  cursor: pointer;
+}
+
+.appointment-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
