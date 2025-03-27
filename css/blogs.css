@@ -1,0 +1,28 @@
+.blogs .content-item-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 40px;
+}
+
+.blogs-item img {
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.blogs-item span {
+  font-style: var(--secondary-font);
+  color: var(--primary-color);
+  letter-spacing: 2px;
+}
+
+.blogs-item-title {
+  font-size: var(--content-secondary-text-size);
+}
+
+.blogs-item-date {
+  margin-top: 10px;
+  color: var(--secondary-color);
+  font-style: italic;
+}
