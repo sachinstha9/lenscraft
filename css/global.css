@@ -5,8 +5,8 @@
   --primary-color: #8d7235;
   --secondary-color: #828282;
   --max-content-width: 1280px;
-  --content-heading-size: 32px;
-  --content-secondary-text-size: 20px;
+  --content-heading-size: 2vw;
+  --content-secondary-text-size: 1.1vw;
 }
 
 * {

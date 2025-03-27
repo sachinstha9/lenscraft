@@ -1,0 +1,99 @@
+.portfolio_images .content-item-body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.portfolio_images .content-item-body div {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio_images .content-item-body div::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.portfolio_images .content-item-body div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.portfolio_item1 {
+  grid-area: 1 / 1 / span 2 / span 1;
+}
+
+.portfolio_item2 {
+  grid-area: 1 / 2 / span 1 / span 2;
+}
+
+.portfolio_item3 {
+  grid-area: 3 / 1 / span 1 / span 1;
+}
+
+.portfolio_item4 {
+  grid-area: 2 / 2 / span 2 / span 1;
+}
+
+.portfolio_item5 {
+  grid-area: 2 / 3 / span 2 / span 1;
+}
+
+.portfolio_item6 {
+  grid-area: 4 / 1 / span 1 / span 2;
+}
+
+.portfolio_item7 {
+  grid-area: 4 / 3 / span 2 / span 1;
+}
+
+.portfolio_item8 {
+  grid-area: 5 / 1 / span 2 / span 1;
+}
+
+.portfolio_item9 {
+  grid-area: 5 / 2 / span 2 / span 1;
+}
+
+.portfolio_item10 {
+  grid-area: 7 / 1 / span 2 / span 2;
+}
+
+.portfolio_item11 {
+  grid-area: 6 / 3 / span 2 / span 1;
+}
+
+.portfolio_item12 {
+  grid-area: 8 / 3 / span 2 / span 1;
+}
+
+.portfolio_item13 {
+  grid-area: 9 / 1 / span 1 / span 1;
+}
+
+.portfolio_item14 {
+  grid-area: 9 / 2 / span 1 / span 1;
+}
+
+.portfolio_item15 {
+  grid-area: 10 / 1 / span 2 / span 1;
+}
+
+.portfolio_item16 {
+  grid-area: 10 / 2 / span 1 / span 2;
+}
+
+.portfolio_item17 {
+  grid-area: 12 / 1 / span 1 / span 1;
+}
+
+.portfolio_item18 {
+  grid-area: 11 / 2 / span 2 / span 2;
+}
