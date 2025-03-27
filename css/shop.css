@@ -1,0 +1,108 @@
+.packages .content-item-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.packages .content-item-body section .package-secondary-heading {
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  font-size: var(--content-secondary-text-size);
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+
+.packages .content-item-body section .package-items {
+  display: flex;
+  column-gap: 20px;
+}
+
+.packages .content-item-body section .package-items div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  align-items: center;
+  background-color: #d9d9d9;
+  font-size: 0.9vw;
+  letter-spacing: 2px;
+  padding: 50px 20px;
+  row-gap: 30px;
+}
+
+.packages .content-item-body section .package-items div p:nth-child(1) {
+  font-size: var(--content-secondary-text-size);
+  text-decoration: underline;
+}
+
+.packages .content-item-body section .package-items div ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  font-size: 0.8vw;
+}
+
+.packages .content-item-body section .package-items div span {
+  margin-top: 20px;
+}
+
+/* photos */
+
+.photos .content-item-body section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.photos_item {
+  height: auto;
+}
+
+.photos_item img {
+  width: 100%;
+}
+
+.photos_item div {
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  font-size: 0.8vw;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.photos_item_title {
+  font-size: var(--content-secondary-text-size);
+  color: var(--primary-color);
+}
+
+.photos_item_size,
+.photos_item_frame,
+.photos_item_quantity {
+  display: flex;
+  gap: 5px;
+}
+
+.photos_item_size select,
+.photos_item_frame select,
+.photos_item_quantity input {
+  background-color: transparent;
+  color: var(--secondary-color);
+  padding: 2px 3px;
+  border: 1px solid var(--secondary-color);
+  outline: none;
+}
+
+.photos_item_quantity input {
+  width: 40px;
+}
+
+.photos_item_btn {
+  margin-top: 10px;
+}
