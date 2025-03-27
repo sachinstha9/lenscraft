@@ -1,0 +1,23 @@
+.banner {
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 10/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .content,
+.banner .content a {
+  text-decoration: none;
+  font-family: var(--secondary-font);
+  color: var(--bg-color);
+  letter-spacing: 3px;
+  font-size: var(--content-heading-size);
+}
+
+.banner .content a:hover {
+  text-decoration: underline;
+}

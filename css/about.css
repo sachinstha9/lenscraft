@@ -1,0 +1,11 @@
+.how_it_started .content-item-body {
+  display: flex;
+}
+
+.how_it_started .content-item-body section {
+  flex: 1;
+}
+
+.how_it_started .content-item-body section img:nth-child(2) {
+  width: 100%;
+}
