@@ -21,6 +21,11 @@ body {
   background-color: var(--bg-color);
 }
 
+input::placeholder,
+textarea::placeholder {
+  opacity: 0.7;
+}
+
 /* content */
 .content {
   max-width: 1280px;
