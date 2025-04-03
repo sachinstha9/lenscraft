@@ -33,7 +33,7 @@
     <header>
       <ul>
         <li>
-          <a href="/">HOME</a>
+          <a href="/" aria-current="page">HOME</a>
         </li>
         <li>
           <a href="/page/about.html">ABOUT</a>
@@ -43,9 +43,12 @@
         </li>
       </ul>
 
-      <div>
-        <img src="./assets/logo_golden.png" alt="logo " />
-      </div>
+      <a href="/" aria-label="LensCraft Boutique Studio homepage">
+        <img
+          src="../assets/logo_golden.png"
+          alt="LensCraft Boutique Studio golden logo"
+        />
+      </a>
 
       <ul>
         <li>
@@ -61,11 +64,22 @@
     </header>
 
     <div class="hero">
-      <img src="./assets/hero_bg.png" alt="girl with the flower" />
+      <img
+        src="./assets/hero_bg.png"
+        alt="Portrait of a young woman holding a sunflower in golden hour light"
+      />
 
       <div>
-        <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        <i
+          class="fa fa-chevron-left"
+          aria-hidden="true"
+          aria-label="Previous slide"
+        ></i>
+        <i
+          class="fa fa-chevron-right"
+          aria-hidden="true"
+          aria-label="Next slide"
+        ></i>
       </div>
     </div>
 
@@ -77,7 +91,7 @@
           <section>
             <img
               src="./assets/home/photography.png"
-              alt="a girl posing for photo "
+              alt="Professional portrait photography session with a smiling woman"
             />
 
             <p>Photography</p>
@@ -86,7 +100,7 @@
           <section>
             <img
               src="./assets/home/videography.png"
-              alt="a girl posing for photo "
+              alt="Videographer filming with professional camera equipment"
             />
 
             <p>Videography</p>
@@ -95,7 +109,7 @@
           <section>
             <img
               src="./assets/home/content_creation.png"
-              alt="a girl posing for photo "
+              alt="Content creator working on social media content with camera and laptop"
             />
 
             <p>Content Creation</p>
@@ -124,7 +138,7 @@
 
         <img
           src="./assets/home/introduction_me.png"
-          alt="Photo of me in mountain"
+          alt="Photographer David standing on a mountain with his camera gear"
         />
       </div>
 
@@ -133,30 +147,49 @@
 
         <div class="content-item-body">
           <div class="item1">
-            <img src="./assets/components/through_my_lens/image1.png" alt="" />
+            <img
+              src="./assets/components/through_my_lens/image1.png"
+              alt="Newborn baby portrait wrapped in a soft white blanket"
+            />
           </div>
           <div class="item2">
-            <img src="./assets/components/through_my_lens/image2.png" alt="" />
+            <img
+              src="./assets/components/through_my_lens/image2.png"
+              alt="Engagement photo of a couple embracing in a field at sunset"
+            />
           </div>
           <div class="item3">
-            <img src="./assets/components/through_my_lens/image3.png" alt="" />
+            <img
+              src="./assets/components/through_my_lens/image3.png"
+              alt="Dramatic ocean waves crashing against coastal rocks"
+            />
           </div>
           <div class="item4">
-            <img src="./assets/components/through_my_lens/image4.png" alt="" />
+            <img
+              src="./assets/components/through_my_lens/image4.png"
+              alt="Urban fashion portrait of a woman in a colorful street"
+            />
           </div>
           <div class="item5">
-            <img src="./assets/components/through_my_lens/image5.png" alt="" />
+            <img
+              src="./assets/components/through_my_lens/image5.png"
+              alt="Family portrait with grandparents, parents and children smiling"
+            />
           </div>
           <div class="item6">
-            <img src="./assets/components/through_my_lens/image6.png" alt="" />
+            <img
+              src="./assets/components/through_my_lens/image6.png"
+              alt="Wedding couple sharing a romantic moment during golden hour"
+            />
           </div>
         </div>
 
         <div style="width: 100%; display: flex; justify-content: center">
           <a
             class="appointment-btn"
-            href="/page/blogs.html"
+            href="./page/portfolio.html"
             style="text-decoration: none"
+            aria-label="View more photos in our portfolio gallery"
             >SEE MORE PHOTOS</a
           >
         </div>
@@ -167,7 +200,10 @@
 
         <div class="content-item-body">
           <section>
-            <img src="./assets/components/blog/image1.png" alt="blog 1 image" />
+            <img
+              src="./assets/components/blog/image1.png"
+              alt="Wild elephant walking through the grasslands of Chitwan National Park"
+            />
             <div>
               <p>CHITWAN, NEPAL</p>
               <p>Read More</p>
@@ -175,7 +211,10 @@
             </div>
           </section>
           <section>
-            <img src="./assets/components/blog/image2.png" alt="blog 1 image" />
+            <img
+              src="./assets/components/blog/image2.png"
+              alt="Ancient Hindu temple in Kathmandu with intricate wood carvings"
+            />
             <div>
               <p>KATHMANDU, NEPAL</p>
               <p>Read More</p>
@@ -183,7 +222,10 @@
             </div>
           </section>
           <section>
-            <img src="./assets/components/blog/image3.png" alt="blog 1 image" />
+            <img
+              src="./assets/components/blog/image3.png"
+              alt="Neon-lit streets of Tokyo at night with bustling city life"
+            />
             <div>
               <p>TOKYO IN FOCUS</p>
               <p>Read More</p>
@@ -191,7 +233,10 @@
             </div>
           </section>
           <section>
-            <img src="./assets/components/blog/image4.png" alt="blog 1 image" />
+            <img
+              src="./assets/components/blog/image4.png"
+              alt="Buddhist monastery in the Tibetan mountains with prayer flags"
+            />
             <div>
               <p>HIGH ALTITUDE FRAMES (TIBET)</p>
               <p>Read More</p>
@@ -205,6 +250,7 @@
             class="appointment-btn"
             href="/page/blogs.html"
             style="text-decoration: none"
+            aria-label="Explore more of our photography blogs"
             >SEE MORE BLOGS</a
           >
         </div>
@@ -224,23 +270,26 @@
           <section>
             <img
               src="./assets/components/customers/hawai_tourism.png"
-              alt="hawai tourism"
+              alt="Hawaii Tourism Board official logo"
             />
             <img
               src="./assets/components/customers/peak_design.png"
-              alt="peak design"
+              alt="Peak Design camera gear company logo"
             />
             <img
               src="./assets/components/customers/kathmandu.png"
-              alt="kathmandu"
+              alt="Kathmandu outdoor equipment company logo"
             />
           </section>
 
           <section>
-            <img src="./assets/components/customers/nikon.png" alt="nikon" />
+            <img
+              src="./assets/components/customers/nikon.png"
+              alt="Nikon camera company logo"
+            />
             <img
               src="./assets/components/customers/ecostore.png"
-              alt="eco store"
+              alt="EcoStore sustainable products logo"
             />
           </section>
         </div>
@@ -251,16 +300,26 @@
 
         <div class="content-item-body">
           <section>
-            <form>
+            <form aria-label="Book a photography session appointment">
               <div style="display: flex; gap: 30px">
                 <div class="appointment-input">
                   <label for="fname">First Name*</label>
-                  <input type="text" name="fname" placeholder="eg. John" />
+                  <input
+                    type="text"
+                    name="fname"
+                    placeholder="eg. John"
+                    aria-label="Enter your first name"
+                  />
                 </div>
 
                 <div class="appointment-input">
                   <label for="lname">Last Name*</label>
-                  <input type="text" name="lname" placeholder="eg. Doe" />
+                  <input
+                    type="text"
+                    name="lname"
+                    placeholder="eg. Doe"
+                    aria-label="Enter your last name"
+                  />
                 </div>
               </div>
 
@@ -270,12 +329,18 @@
                   type="email"
                   name="email"
                   placeholder="eg. johndoe92@gmail.com"
+                  aria-label="Enter your email address"
                 />
               </div>
 
               <div class="appointment-input">
                 <label for="number">Phone Number</label>
-                <input type="text" name="number" placeholder="eg. 9812345678" />
+                <input
+                  type="text"
+                  name="number"
+                  placeholder="eg. 9812345678"
+                  aria-label="Enter your phone number"
+                />
               </div>
 
               <div class="appointment-input">
@@ -287,6 +352,7 @@
                     id="photography"
                     name="photography"
                     value="Bike"
+                    aria-label="Select photography services"
                   />
                   <label for="photography"> Photography</label><br />
 
@@ -295,6 +361,7 @@
                     id="videography"
                     name="videography"
                     value="Car"
+                    aria-label="Select videography services"
                   />
                   <label for="videography"> Videography</label><br />
 
@@ -303,6 +370,7 @@
                     id="content_creation"
                     name="content_creation"
                     value="Boat"
+                    aria-label="Select content creation services"
                   />
                   <label for="content_creation"> Content Creation</label><br />
                 </div>
@@ -317,11 +385,17 @@
                   style="resize: none"
                   rows="10"
                   placeholder="eg. I want to take photo of my dog."
+                  aria-label="Additional information about your photography needs"
                 ></textarea>
               </div>
 
               <div>
-                <button class="appointment-btn">SUBMIT</button>
+                <button
+                  class="appointment-btn"
+                  aria-label="Submit your appointment request"
+                >
+                  SUBMIT
+                </button>
               </div>
             </form>
           </section>
@@ -329,7 +403,7 @@
           <section>
             <img
               src="./assets/components/appointment.png"
-              alt="picture of (i donot know in english the word)"
+              alt="Photographer adjusting camera settings during an outdoor photoshoot"
             />
           </section>
         </div>
@@ -339,17 +413,26 @@
     <div class="footer">
       <ul>
         <li>
-          <a href="https://www.facebook.com/">
+          <a
+            href="https://www.facebook.com/"
+            aria-label="Visit our Facebook page"
+          >
             <i class="fa fa-facebook" aria-hidden="true"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/">
+          <a
+            href="https://www.instagram.com/"
+            aria-label="Visit our Instagram profile"
+          >
             <i class="fa fa-instagram" aria-hidden="true"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.pinterest.com/">
+          <a
+            href="https://www.pinterest.com/"
+            aria-label="Visit our Pinterest board"
+          >
             <i class="fa fa-pinterest-p" aria-hidden="true"></i>
           </a>
         </li>
@@ -361,6 +444,7 @@
           <a
             style="text-decoration: underline; color: var(--bg-color)"
             href="https://maps.app.goo.gl/qS2eiRL3JDjqJWXZ9"
+            aria-label="View our studio location on Google Maps"
             >Cuba Street, Wellington</a
           >.
         </p>
