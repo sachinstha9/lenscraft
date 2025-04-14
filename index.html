@@ -63,24 +63,30 @@
       </ul>
     </header>
 
-    <div class="hero">
-      <img
-        src="./assets/hero_bg.png"
-        alt="Portrait of a young woman holding a sunflower in golden hour light"
-      />
-
-      <div>
-        <i
-          class="fa fa-chevron-left"
-          aria-hidden="true"
-          aria-label="Previous slide"
-        ></i>
-        <i
-          class="fa fa-chevron-right"
-          aria-hidden="true"
-          aria-label="Next slide"
-        ></i>
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <img src="./assets/hero_bg.png" alt="Image 1" />
       </div>
+      <div class="carousel-slide">
+        <img src="./assets/hero_bg2.png" alt="Image 2" />
+      </div>
+      <div class="carousel-slide">
+        <img
+          src="./assets/hero_bg3.png"
+          alt="Family Walking Field Nature Togetherness"
+        />
+      </div>
+      <div class="carousel-slide">
+        <img src="./assets/hero_bg4.png" alt="Colorful humidity glass" />
+      </div>
+      <div class="carousel-slide">
+        <img
+          src="./assets/hero_bg5.png"
+          alt="Young family enjoying a day in the park"
+        />
+      </div>
+      <button class="prev-button">&#10094;</button>
+      <button class="next-button">&#10095;</button>
     </div>
 
     <div class="content">
@@ -463,4 +469,52 @@
       <p style="font-size: 14px">© Copyright. Made by Sachin</p>
     </div>
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const slides = document.querySelectorAll(".carousel-slide");
+      const prevButton = document.querySelector(".prev-button");
+      const nextButton = document.querySelector(".next-button");
+      let currentIndex = 0;
+      let intervalId;
+
+      function showSlide(index) {
+        slides.forEach((slide) => slide.classList.remove("active"));
+        slides[index].classList.add("active");
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      }
+
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+      }
+
+      function startAutoSlide() {
+        intervalId = setInterval(nextSlide, 5000);
+      }
+
+      function stopAutoSlide() {
+        clearInterval(intervalId);
+      }
+
+      prevButton.addEventListener("click", () => {
+        prevSlide();
+        stopAutoSlide();
+        startAutoSlide();
+      });
+
+      nextButton.addEventListener("click", () => {
+        nextSlide();
+        stopAutoSlide(); // Stop auto-sliding when user interacts
+        startAutoSlide();
+      });
+
+      showSlide(currentIndex);
+
+      startAutoSlide();
+    });
+  </script>
 </html>
