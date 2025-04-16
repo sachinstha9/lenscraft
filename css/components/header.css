@@ -18,7 +18,7 @@ header ul li a {
   text-decoration: none;
   font-family: var(--primary-font);
   color: var(--primary-color);
-  font-size: var(--content-heading-size);
+  font-size: 24px;
 }
 
 header ul li a:hover {
